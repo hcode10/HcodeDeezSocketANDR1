@@ -13,22 +13,23 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="11dp">
 
-        <EditText
-            android:id="@+id/edt_send_message"
-            android:layout_width="0dp"
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
-            android:hint="Enter message"
-            android:inputType="text" />
+            android:text="Update" />
 
         <Button
-            android:id="@+id/btn_send"
+            android:id="@+id/btn_download"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:text="Send" />
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Download" />
     </TableRow>
 
     <ScrollView
