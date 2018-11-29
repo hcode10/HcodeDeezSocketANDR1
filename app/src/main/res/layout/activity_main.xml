@@ -30,16 +30,35 @@
             android:layout_marginRight="10dp"
             android:layout_marginLeft="10dp"
             android:text="Download" />
+        <Button
+            android:id="@+id/date_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Date update" />
     </TableRow>
 
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginTop="60dp"
+        android:max="100"
+        android:progress="60"
+        android:scrollbarStyle="outsideInset"
+        android:theme="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal" />
+
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/tr_send_message"
-        android:layout_marginTop="25dp"
-        android:id="@+id/scrollView2">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp">
 
         <TextView
             android:id="@+id/tv_reply_from_server"
@@ -47,4 +66,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" />
     </ScrollView>
+
+
 </RelativeLayout>
